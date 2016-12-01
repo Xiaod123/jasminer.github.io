@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<title>jasmine-r</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<script src="https://use.fontawesome.com/c3b94c1e81.js"></script>
+<link rel="icon" 
+      type="image/png" 
+      href="icon.png">
+
+<body>
+
+
+
+<nav class="w3-sidenav w3-white w3-card-2" style="width:23%">
+<div class="boxed">
+  <br>
+  <h1>jasmine-r</h1>
+  <font size="4"><a href="">github</a> / <a href="">email</a> / <a href="">linkedin</a></font>
+  <!--<button href="twitter.com"><b>GITHUB</b></a></button> <button type="button"><b>EMAIL</b></button> <button type="button"><b>TWITTER</b></button>-->
+   
+<!--<h2> HCI / Computer Graphics / Optics
+   Vision / Virtual + Augmented Reality
+  </h2>_________________________________
+  <!--<br>  jaroberts@gsd.harvard.edu
+  <br> jasminer@mit.edu
+  <p><b> +1 (617) 682 0912</b>
+  _______________________________
+   <p><i>515 Beacon St.
+  <br>Boston, MA 02215</i>
+ 
+    
+  </i>-->
+
+  
+
+  <h6>Projects</h6>
+  <font size="2">
+  <a href="#ar">Gesture-Controlled AR</i></a>
+  <a href="#camera">Multiple Camera Capture</i></a>
+  <a href="#irobot">iRobot Keyboard Hack</a>
+  <a href="#radar">mBed ARM Radar</i></a>
+  
+  
+
+
+  <h6>Fellowship</h6>
+  <a href="#nsf">NSF Fellowship @ Lightwave <br>Research Lab</i></a></font>
+
+
+
+  <h6>3D Modeling</h6>
+  <font size="2"><a href="#cell">Cell Modeling</i></a>
+  <a href="#metamaterial">Metamaterial Camera Shutter</i></a>
+  <a href="#vr">Virtual Reality iPhone case</i></a></font>
+
+  <h6>Teaching</h6>
+  <font size="2"><a href="http://d.ucsd.edu/class/intro-hci/2016/">Real Science Fiction Studio <br>(Intro HCI)</i></a>
+  <a href="http://cogs121.ucsd.edu/">HCI Programming Studio</i></a></font>
+
+  <h6>Links</h6>
+  <font size="2"><a href="resume.pdf">Resume (PDF)</i></a></font>
+
+ 
+</nav>
+</div>
+
+
+<div style="margin-left:25%">
+
+<!--PROJECT CONTENT-->
+
+<div id="ar">
+<div class="w3-container">
+  <h2><b>GESTURE-CONTROLLED AR</b></h2>
+  <h3>University of California, San Diego: Electrical + Computer Enginering Masters Thesis| Committee: Pamela Cosman, Electrical + Computer Engineering; Benjamin Bratton, Visual Arts and Jurgen Schulze, Computer Science + Engineering </h3>
+  <br>
+  <div class="content">
+  <p>In 1963, Ivan Sutherland made Sketchpad, the first interactive geometry program that revolutionized the computer graphics program.<i>Tilt Brush</i> by Google allows users to paint life-size three-dimensional object</p>
+  <center><img src="AR/hands.png" style="width:50%"><img src="AR/one.png" style="width:50%"></center>
+ 
+  
+
+  <p>I created a new augmented reality technology, that goes a step further: it recognizes a user’s hand gestures and allows gestural computer-aided design. This means a person using the application <i>creates</i> three-dimensional visual content. Previously, interacting with augmented reality content involved tapping the screen.</p>
+
+  <p>Users can dynamically create solid shapes between the bounds of their hands. Rectanglular prisms within parallel hands spheres within cupped hands etc. The virtual content is carefully lined up with gestural input.</p>
+
+  </div>
+</div>
+
+<div id="camera">
+<div class="w3-container">
+
+
+  <h2><b>MULTIPLE CAMERA CAPTURE</b></h2>
+  <h3>Intel Corporation, Santa Clara: Perceptual Computing Group | Greg Hoover, Instructor Computer Science and Engineering;  Nishant Baskar, Teaching Fellow Texas Instruments</h3>
+
+  <div class="content">
+
+  <p>Note that you control the size of the sidenav with style="width:value". To change the color, change the w3-color class.</p>
+  
+
+  <p>Make sure to add the margin-left property to the page content, with a value that is equal to the width of the sidenav. If you omit this, the navigation pane will overlay/sit on top of the page content.</p>
+</div>
+
+
+
+<div id="irobot">
+<div class="w3-container">
+  <h2><b></i></font>iROBOT KEYBOARD HACK<br></b></h2>
+  <h3>In collaboration with Yuning Hui | University of California, San Diego: Embedded Systems + Robotics| Greg Hoover, Instructor Computer Science and Engineering;  Nishant Baskar, Teaching Fellow Texas Instruments</h3>
+
+   <div class="content">
+  <p>The iRobot basic movement control is implemented by socket and serial port on BBB. There are three related Python files. <font face="courier"><font size="2">"irobot-PC.py"</font></font> is on the PC, while "<font face="courier"><font size="2">"main-BBB"</font></font> and <font face="courier"><font size="2">"irobot-BBB.py"</font></font> are on the BBB board.</p>
+  <p>The exact position of iRobot can be described by three variables: X, Y, and H for heading. All basic movement steps can be calculated from the difference between the target position and current position.
+  </p>
+  <center><video width="400" height="271" controls>
+  <source src="Video/roomba.mp4" type="video/mp4"> </video> 
+
+
+  <p><font face="courier"><font size="2">irobot-BBB.py</font></font> is a library module file written in Python. It provides all necessary interfaces to control the iRobot, encapsulating in one class called iRobot. <font face="courier"><font size="2">main-BBB.py</font></font> is used as a bridge between the iRobot and the socket communications. It can receive the commands from the PC and invoke the control functions of the class iRobot after parsing them. It can also return any returning data through socket. <font face="courier"><font size="2">irobot-PC.py</font></font> reads commands from the screen and sends it to the BBB board through socket. It receives the returning data and prints it on the screen.</p>
+  
+  <br><img src="roomba/path.png" style="width:27%"></center>
+  <p>Make sure to add the margin-left property to the page content, with a value that is equal to the width of the sidenav. If you omit this, the navigation pane will overlay/sit on top of the page content.</p>
+
+</div></div>
+
+
+<div id="radar">
+<div class="w3-container">
+
+  <h2><b>mBED ARM RADAR</b></h2>
+  <h3>In collaboration with Yuning Hui | University of California, San Diego: Embedded Systems + Robotics| Greg Hoover, Instructor Computer Science and Engineering;  Nishant Baskar, Teaching Fellow Texas Instruments</h3>
+
+  <div class="content">
+  <p>The mbed Board is connected to the BeagleBone Black(BBB) board through serial port(p13, p14). We wrote an ISR function for the new serial port to handle the command. The main structure of this function is switch-case.</p>
+
+  <video width="420" height="240" controls>
+  <source src="Video/priority.mp4" type="video/mp4">
+  </video>&nbsp;&nbsp;
+  <video width="420" height="240" controls>
+  <source src="Video/fcfs.mp4" type="video/mp4">
+  </video>
+  <br><font size="2">First Come First Serve on left and Priority scheduler on right</font>
+  </center>
+
+
+
+   <p>When a command comes in, the ISR will first shutdown the LCD and motor events generator to ensure the priority of command execution. After the execution, the two events will be recovered or kept stopped by the Stop command.</p>
+
+    <p>The Start/Stop commands are executed by starting or stopping the tickers for LCD and motor event generator. The command of adjusting the heading to a specific 15 degree scope is executed by setting the two global variables for the max + min heading degrees(0-180 by default). The Printing command will send out all points stored in the array.</p>
+
+    <p>The socket program in PC was written in C++. It has two threads, implemented by Pthread. One is for reading commands from keyboard and sends it to the BBB through UDP socket, while the other is for receiving the data from BBB and printing on the screen.</p>
+
+    <p>The socket program in BBB board was written in Python. The main reason is that there is a mature serial port module called Pyserial in Python, supporting non-block reading of serial port. So there is no need for multi-threads.
+    <br>The program just polls the socket and the serial port in an infinite loop, forwarding data between the mbed and the PC.
+</p>
+  
+
+  <p>Make sure to add the margin-left property to the page content, with a value that is equal to the width of the sidenav. If you omit this, the navigation pane will overlay/sit on top of the page content.</p></div>
+
+
+</div>
+
+<div id="nsf">
+<div class="w3-container">
+
+
+  <h2><b>LIGHTWAVE RESEARCH LABORATORY</b></h2>
+  <h3>Undergraduate Research Fellowship | Center for Integrated Access Networks, Columbia University | Greg Hoover, Instructor Computer Science and Engineering;  Nishant Baskar, Teaching Fellow Texas Instruments</h3>
+  <div class="content">
+
+  <p>Note that you control the size of the sidenav with style="width:value". To change the color, change the w3-color class.</p>
+  
+
+  <p>Make sure to add the margin-left property to the page content, with a value that is equal to the width of the sidenav. If you omit this, the navigation pane will overlay/sit on top of the page content.</p>
+</div>
+
+<div id="cell">
+<div class="w3-container">
+
+
+  <h2><b>CELL MODELING</b></h2>
+  <h3>Intel Corporation, Santa Clara: Perceptual Computing Group | Greg Hoover, Instructor Computer Science and Engineering;  Nishant Baskar, Teaching Fellow Texas Instruments</h3>
+  <div class="content">
+
+  <p>Note that you control the size of the sidenav with style="width:value". To change the color, change the w3-color class.</p>
+  
+
+  <p>Make sure to add the margin-left property to the page content, with a value that is equal to the width of the sidenav. If you omit this, the navigation pane will overlay/sit on top of the page content.</p>
+</div>
+
+
+<div id="metamaterial">
+<div class="w3-container">
+
+
+  <h2><b>METAMATERIAL CAMERA SHUTTER</b></h2>
+  <h3>Nano Micro Macro Adaptive Materials Lab | Instructors: Martin Bechthold and Joanna Aizenberg, Wyss Institute </h3>
+  <div class="content">
+
+  <p>To do this they use metamaterials – a type of engineered material defined by its internal structure rather than what substance it is made of. The objects created can have controlled directional movement, which means they can perform set mechanical functions, like gripping something or latching a door.The Hasso Plattner Institute's research opens up new possibilities for 3D printing by cutting out the need for a printed mechanism to be assembled from multiple, sometimes fiddly pieces.</p>
+
+  <p>"The ultimate vision is to design the inside of objects!" Hasso Plattner Institute researcher, Patrick Baudisch</p>
+
+
+ 
+  <img src="Metamaterial/perspective.png" style="width:33%"><img src="Metamaterial/half.png" style="width:33%"><img src="Metamaterial/simulation.png" style="width:33%">
+  
+   <p>In the future, as modularity and customization become more prominent for devices, this virtual realty lens can become a smaller component</p>
+
+  <video width="1000" height="471" controls>
+  <source src="Video/shutter.mp4" type="video/mp4"> </video> 
+
+
+
+
+</div>
+
+
+
+<div id="vr">
+<div class="w3-container">
+
+
+  <h2><b>VIRTUAL REALITY iPHONE CASE</b></h2>
+  <h3>Completed for Design for Autodesk Challenge| University of California, San Diego | Design Academy at  Autodesk | Student Expert Application</h3>
+  <div class="content">
+
+  <p>The cost and accessibility of virtual equipment makes it extremely limited to who can enjoy virtual experiences. Autodesk gave a workshop at UC San Diego regarding using AutoDesk Fusion 360 and product design. Before this project, I had never used CAD software for products and mechanical parts. Virtual reality is a type of digital reality–a way of using technology to create environments designed for expressly human interaction.</p>
+
+  <p>I set out to design an iPhone case that doubles as virtual reality glasses and that can withstand more wear than the Google Cardboard. About 60% of the population has a smart phone--hopefully these technologies can be democratized</p>
+
+
+ 
+  <img src="VR Case/5.png" style="width:33%"><img src="VR Case/6.png" style="width:33%"><img src="VR Case/4.png" style="width:33%"><br>
+  <center><img src="VR Case/2.png" style="width:47%">&nbsp;&nbsp;<img src="VR Case/3.png" style="width:47%"></center>
+  
+   <p>In the future, as modularity and customization become more prominent for devices, this virtual realty lens can become a smaller component</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--END OF PROJECT CONTENT-->
+
+
+
+</div>
+
+
+</div>
+      
+</body>
+</html>

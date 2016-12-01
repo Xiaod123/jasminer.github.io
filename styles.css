@@ -23,6 +23,18 @@
 
 @font-face {
 
+ font-family: 'Oswald';
+
+ src: url("fonts/Oswald-Regular.ttf");
+ /* FOR IEs */
+
+ /*src: local('Futura'), url('Futura.ttf') format('truetype');
+ /* for other web browsers */
+
+}
+
+@font-face {
+
  font-family: 'Alternate-Gothic';
 
  src: url("fonts/Alternate-Gothic.ttf");
@@ -215,7 +227,7 @@ html,body {
 font-family: 'Futura-Light',sans-serif;
 font-size:15px;
 font-weight: 300;
-line-height:1.5;
+line-height:1.6;
 }
 
 h1,h4,h5,h6,.w3-slim,.w3-wide {
@@ -227,6 +239,7 @@ font-family: 'Dosis-Medium';
 
 h1 {
 font-size:36px;
+font-family: 'Oswald';
 }
 
 h2 {
@@ -265,19 +278,20 @@ margin:10px 0;
 }
 
 h2 {
-	padding-top: 110px;
-	font-family:'Alternate-Gothic';
-	font-weight: lighter;
+	padding-top: 95px;
+	font-family:'Oswald';
+	text-transform: lowercase;
 	text-align: left;
 	padding-left: 32px;
+	border-bottom: -50px;
 	color: #111;
 	letter-spacing: 2px;
 	font-size: 26px;
+	line-height: 12spx;
 
 }
 h3 {
 	font-family:'Futura';
-	padding-top: -50px;
 	word-spacing: -3px;
 	padding-left: 32px;
 	padding-right: 88px;
@@ -290,6 +304,9 @@ h3 {
 .boxed {
   border: 0px solid black ;
   padding-left: 50px;
+}
+.boxed a{
+	padding: none;
 }
 
 .content {
@@ -350,11 +367,9 @@ text-align:center;
 display:table-cell;
 text-align:left;
 vertical-align:top;
-padding:8px;
 }
 
 .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child {
-padding-left:16px;
 }
 
 .w3-btn,.w3-btn-block {
@@ -501,7 +516,7 @@ padding:8px;
 border-bottom:3px solid transparent;
 -webkit-transition:border-bottom .3s;
 transition:border-bottom .3s;
-padding:0 8px;
+padding:0 0px;
 }
 
 .w3-topnav a:hover {
@@ -536,7 +551,7 @@ transition:opacity 0;
 }
 
 .w3-sidenav {
-height:100%;
+height:110%;
 width:150px;
 background-color:#000;
 position:fixed!important;
@@ -544,9 +559,6 @@ z-index:1;
 overflow:auto;
 }
 
-.w3-sidenav a {
-padding:4px 2px 4px 16px;
-}
 
 .w3-sidenav .w3-dropdown-hover .w3-dropdown-content,.w3-sidenav .w3-dropdown-click .w3-dropdown-content {
 min-width:100%;
@@ -606,7 +618,6 @@ display:inline;
 text-decoration:none;
 color:#000;
 float:left;
-padding:8px 16px;
 }
 
 .w3-input-group,.w3-group {
@@ -1134,7 +1145,7 @@ opacity:0;
 }
 
 .w3-container {
-padding-top:15px;
+padding-top: -10px;
 padding-right: 25px;
 }
 

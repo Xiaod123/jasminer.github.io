@@ -16,7 +16,8 @@
 <div class="boxed">
   <br>
   <h1>jasmine-r</h1>
-  <font size="4"><a href="">github</a> / <a href="">email</a> / <a href="">linkedin</a></font>
+  <font size="4"><font color ="#B0B0B0"><a href="mailto:jaroberts@gsd.harvard.edu?subject=Hello"><i class="fa fa-envelope-square"></i> email</a><a href="https://github.com/jasminer"><i class="fa fa-git-square"></i> github</a><a href="https://www.linkedin.com/in/robertsjasmine"><i class="fa fa-linkedin-square"></i> linkedin</a>
+  ______________________________________________</font></font>
   <!--<button href="twitter.com"><b>GITHUB</b></a></button> <button type="button"><b>EMAIL</b></button> <button type="button"><b>TWITTER</b></button>-->
    
 <!--<h2> HCI / Computer Graphics / Optics
@@ -33,7 +34,7 @@
   </i>-->
 
   
-
+<br>
   <h6>Projects</h6>
   <font size="2">
   <a href="#ar">Gesture-Controlled AR</i></a>
@@ -76,8 +77,8 @@
   <h3>University of California, San Diego: Electrical + Computer Enginering Masters Thesis| Committee: Pamela Cosman, Electrical + Computer Engineering; Benjamin Bratton, Visual Arts and Jurgen Schulze, Computer Science + Engineering </h3>
   <br>
   <div class="content">
-  <p>In 1963, Ivan Sutherland made Sketchpad, the first interactive geometry program that revolutionized the computer graphics program.<i>Tilt Brush</i> by Google allows users to paint life-size three-dimensional object</p>
-  <center><img src="AR/hands.png" style="width:50%"><img src="AR/one.png" style="width:50%"></center>
+  <p>In 1963, Ivan Sutherland made <i>Sketchpad</i>, the first interactive geometry program that revolutionized the computer graphics program.<i>Tilt Brush</i> by Google allows users to paint life-size three-dimensional object</p>
+  <center><img src="AR/hands.png" style="width:49.5%">&nbsp;<img src="AR/one.png" style="width:49.5%"></center>
  
   
 
@@ -93,14 +94,11 @@
 
 
   <h2><b>MULTIPLE CAMERA CAPTURE</b></h2>
-  <h3>Intel Corporation, Santa Clara: Perceptual Computing Group | Greg Hoover, Instructor Computer Science and Engineering;  Nishant Baskar, Teaching Fellow Texas Instruments</h3>
+  <h3>Intel Corporation, Santa Clara | Perceptual Computing Group</h3>
 
   <div class="content">
-
-  <p>Note that you control the size of the sidenav with style="width:value". To change the color, change the w3-color class.</p>
-  
-
-  <p>Make sure to add the margin-left property to the page content, with a value that is equal to the width of the sidenav. If you omit this, the navigation pane will overlay/sit on top of the page content.</p>
+  <br>
+ 
 </div>
 
 
@@ -109,18 +107,19 @@
 <div class="w3-container">
   <h2><b></i></font>iROBOT KEYBOARD HACK<br></b></h2>
   <h3>In collaboration with Yuning Hui | University of California, San Diego: Embedded Systems + Robotics| Greg Hoover, Instructor Computer Science and Engineering;  Nishant Baskar, Teaching Fellow Texas Instruments</h3>
-
+  <br>
    <div class="content">
   <p>The iRobot basic movement control is implemented by socket and serial port on BBB. There are three related Python files. <font face="courier"><font size="2">"irobot-PC.py"</font></font> is on the PC, while "<font face="courier"><font size="2">"main-BBB"</font></font> and <font face="courier"><font size="2">"irobot-BBB.py"</font></font> are on the BBB board.</p>
   <p>The exact position of iRobot can be described by three variables: X, Y, and H for heading. All basic movement steps can be calculated from the difference between the target position and current position.
   </p>
-  <center><video width="400" height="271" controls>
-  <source src="Video/roomba.mp4" type="video/mp4"> </video> 
+  <video width="400" height="271" controls>
+  <source src="Video/roomba.mp4" type="video/mp4"> </video>
+  <video width="400" height="271" controls>
+  <source src="Video/roomba2.mp4" type="video/mp4"> </video>  
 
 
   <p><font face="courier"><font size="2">irobot-BBB.py</font></font> is a library module file written in Python. It provides all necessary interfaces to control the iRobot, encapsulating in one class called iRobot. <font face="courier"><font size="2">main-BBB.py</font></font> is used as a bridge between the iRobot and the socket communications. It can receive the commands from the PC and invoke the control functions of the class iRobot after parsing them. It can also return any returning data through socket. <font face="courier"><font size="2">irobot-PC.py</font></font> reads commands from the screen and sends it to the BBB board through socket. It receives the returning data and prints it on the screen.</p>
   
-  <br><img src="roomba/path.png" style="width:27%"></center>
   <p>Make sure to add the margin-left property to the page content, with a value that is equal to the width of the sidenav. If you omit this, the navigation pane will overlay/sit on top of the page content.</p>
 
 </div></div>
@@ -131,14 +130,15 @@
 
   <h2><b>mBED ARM RADAR</b></h2>
   <h3>In collaboration with Yuning Hui | University of California, San Diego: Embedded Systems + Robotics| Greg Hoover, Instructor Computer Science and Engineering;  Nishant Baskar, Teaching Fellow Texas Instruments</h3>
-
+  <br>
   <div class="content">
   <p>The mbed Board is connected to the BeagleBone Black(BBB) board through serial port(p13, p14). We wrote an ISR function for the new serial port to handle the command. The main structure of this function is switch-case.</p>
 
-  <video width="420" height="240" controls>
+
+  <video width="400" height="271" controls>
   <source src="Video/priority.mp4" type="video/mp4">
-  </video>&nbsp;&nbsp;
-  <video width="420" height="240" controls>
+  </video>
+  <video width="400" height="271" controls>
   <source src="Video/fcfs.mp4" type="video/mp4">
   </video>
   <br><font size="2">First Come First Serve on left and Priority scheduler on right</font>
@@ -154,7 +154,7 @@
 
     <p>The socket program in BBB board was written in Python. The main reason is that there is a mature serial port module called Pyserial in Python, supporting non-block reading of serial port. So there is no need for multi-threads.
     <br>The program just polls the socket and the serial port in an infinite loop, forwarding data between the mbed and the PC.
-</p>
+    </p>
   
 
   <p>Make sure to add the margin-left property to the page content, with a value that is equal to the width of the sidenav. If you omit this, the navigation pane will overlay/sit on top of the page content.</p></div>
@@ -170,10 +170,8 @@
   <h3>Undergraduate Research Fellowship | Center for Integrated Access Networks, Columbia University | Greg Hoover, Instructor Computer Science and Engineering;  Nishant Baskar, Teaching Fellow Texas Instruments</h3>
   <div class="content">
 
-  <p>Note that you control the size of the sidenav with style="width:value". To change the color, change the w3-color class.</p>
+    <br>
   
-
-  <p>Make sure to add the margin-left property to the page content, with a value that is equal to the width of the sidenav. If you omit this, the navigation pane will overlay/sit on top of the page content.</p>
 </div>
 
 <div id="cell">
@@ -181,13 +179,13 @@
 
 
   <h2><b>CELL MODELING</b></h2>
-  <h3>Intel Corporation, Santa Clara: Perceptual Computing Group | Greg Hoover, Instructor Computer Science and Engineering;  Nishant Baskar, Teaching Fellow Texas Instruments</h3>
+  <h3>NanoVR | University of California San Diego</h3>
   <div class="content">
+  <br>
+  <p>Modeling a cancer cell as a virtual reality asset </p>
 
-  <p>Note that you control the size of the sidenav with style="width:value". To change the color, change the w3-color class.</p>
-  
+  <img src="Assets/cancer.jpg" style="width:98%">  
 
-  <p>Make sure to add the margin-left property to the page content, with a value that is equal to the width of the sidenav. If you omit this, the navigation pane will overlay/sit on top of the page content.</p>
 </div>
 
 
@@ -199,6 +197,7 @@
   <h3>Nano Micro Macro Adaptive Materials Lab | Instructors: Martin Bechthold and Joanna Aizenberg, Wyss Institute </h3>
   <div class="content">
 
+    <br>
   <p>To do this they use metamaterials – a type of engineered material defined by its internal structure rather than what substance it is made of. The objects created can have controlled directional movement, which means they can perform set mechanical functions, like gripping something or latching a door.The Hasso Plattner Institute's research opens up new possibilities for 3D printing by cutting out the need for a printed mechanism to be assembled from multiple, sometimes fiddly pieces.</p>
 
   <p>"The ultimate vision is to design the inside of objects!" Hasso Plattner Institute researcher, Patrick Baudisch</p>
@@ -207,7 +206,7 @@
  
   <img src="Metamaterial/perspective.png" style="width:33%"><img src="Metamaterial/half.png" style="width:33%"><img src="Metamaterial/simulation.png" style="width:33%">
   
-   <p>In the future, as modularity and customization become more prominent for devices, this virtual realty lens can become a smaller component</p>
+   <p>Shutters have a lifetime about 10,000 clicks. Replacing electrical parts with mechanical parts can lessen the cost of replacing expensive shutters which range from $300 - $1000.</p>
 
   <video width="1000" height="471" controls>
   <source src="Video/shutter.mp4" type="video/mp4"> </video> 
@@ -227,6 +226,7 @@
   <h3>Completed for Design for Autodesk Challenge| University of California, San Diego | Design Academy at  Autodesk | Student Expert Application</h3>
   <div class="content">
 
+<br>
   <p>The cost and accessibility of virtual equipment makes it extremely limited to who can enjoy virtual experiences. Autodesk gave a workshop at UC San Diego regarding using AutoDesk Fusion 360 and product design. Before this project, I had never used CAD software for products and mechanical parts. Virtual reality is a type of digital reality–a way of using technology to create environments designed for expressly human interaction.</p>
 
   <p>I set out to design an iPhone case that doubles as virtual reality glasses and that can withstand more wear than the Google Cardboard. About 60% of the population has a smart phone--hopefully these technologies can be democratized</p>
